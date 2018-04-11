@@ -1,9 +1,9 @@
-package maxsumcontiguous_test
+package basic_test
 
 import (
 	"testing"
 
-	"github.com/sunilgopinath/codefights/maxsumcontiguous"
+	"github.com/sunilgopinath/codefights/basic"
 )
 
 var testCases = []struct {
@@ -17,7 +17,7 @@ var testCases = []struct {
 
 func TestArrayMaxConsecutiveSum2(t *testing.T) {
 	for _, test := range testCases {
-		got := maxsumcontiguous.ArrayMaxConsecutiveSum2(test.in)
+		got := basic.ArrayMaxConsecutiveSum2(test.in)
 		if got != test.expected {
 			t.Fatalf("Got %d, want %d", got, test.expected)
 		}

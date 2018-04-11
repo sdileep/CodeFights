@@ -1,4 +1,4 @@
-package maxsumcontiguous
+package basic
 
 // ArrayMaxConsecutiveSum2 returns the longest continuous subarray sum
 func ArrayMaxConsecutiveSum2(aa []int) int {
