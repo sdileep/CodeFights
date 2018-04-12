@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
-	h := basic.ProductExceptSelf([]int{1, 2, 3, 4}, 12)
+	// h := basic.ProductExceptSelf([]int{1, 2, 3, 4}, 12)
+	// fmt.Println(h)
+	h := basic.MinSubstringWithAllChars("tvdsxcqsnoeccaurocnk", "acqt")
 	fmt.Println(h)
 }
