@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	h := basic.SumInRange([]int{3, 0, -2, 6, -3, 2}, [][]int{{0, 2}, {2, 5}, {0, 5}})
+	h := basic.ProductExceptSelf([]int{1, 2, 3, 4}, 12)
 	fmt.Println(h)
 }
