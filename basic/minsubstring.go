@@ -32,7 +32,7 @@ func MinSubstringWithAllChars(s string, t string) string {
 	for i := 0; i < len(rr)-len(t); i++ {
 		r := rr[i]
 		if _, ok := m[r]; ok {
-			ss = search(i, rr, mapify(t)) // need to pass in a reference to the map
+			ss = search(i, rr, copyMap(m)) // need to pass in a reference to the map
 			if ss != "" {
 				if len(ss) < msc {
 					ms = ss
@@ -49,6 +49,15 @@ func min(a, b int) int {
 		return a
 	}
 	return b
+}
+
+func copyMap(m map[rune]int) map[rune]int {
+	// Create the target map
+	targetMap := make(map[rune]int)
+	for k, v := range m {
+		targetMap[k] = v
+	}
+	return targetMap
 }
 
 func search(start int, rr []rune, m map[rune]int) string {
