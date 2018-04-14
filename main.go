@@ -9,6 +9,6 @@ import (
 func main() {
 	// h := basic.ProductExceptSelf([]int{1, 2, 3, 4}, 12)
 	// fmt.Println(h)
-	h := arcade.AdjacentElementsProduct([]int{-23, 4, -3, 8, -12})
+	h := arcade.MakeArrayConsecutive2([]int{6, 2, 3, 8})
 	fmt.Println(h)
 }
