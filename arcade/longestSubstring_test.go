@@ -12,6 +12,7 @@ var testLongestSubstringCases = []struct {
 	expected []string
 }{
 	{[]string{"aba", "aa", "ad", "vcd", "aba"}, []string{"aba", "vcd", "aba"}},
+	{[]string{"abc", "eeee", "abcd", "dcd"}, []string{"eeee", "abcd"}},
 }
 
 func TestAllLongestSubstring(t *testing.T) {

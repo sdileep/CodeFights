@@ -7,10 +7,9 @@ func AllLongestStrings(inputArray []string) []string {
 	for _, e := range inputArray {
 		if len(e) > max {
 			max = len(e)
-		}
-	}
-	for _, e := range inputArray {
-		if len(e) == max {
+			res = nil
+			res = append(res, e)
+		} else if len(e) == max {
 			res = append(res, e)
 		}
 	}
